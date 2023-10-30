@@ -1,0 +1,54 @@
+diff and patch cheetsheet:
+http://man7.org/linux/man-pages/man1/diff.1.html
+http://man7.org/linux/man-pages/man1/patch.1.html
+
+https://git-scm.com/doc
+
+https://www.mercurial-scm.org/
+
+https://subversion.apache.org/
+
+https://en.wikipedia.org/wiki/Version_control
+
+Initial Git Cheat Sheet
+Check out the following links for more information:
+
+The 
+Linux kernel documentation <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/process/submitting-patches.rst?id=HEAD>
+ itself, as well as 
+impassioned
+ opinions from other 
+developers
+. 
+
+You can check out "
+Setting your email in Git <https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address>
+" and "
+Keeping your email address private <https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address>
+" on the GitHub help site for how to do this.  
+
+Conflict Resolution Cheat Sheet
+Merge conflicts are not uncommon when working in a team of developers, or on Open Source Software. Fortunately, GitHub has some good documentation on how to handle them when they happen:
+
+https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-merge-conflicts
+
+https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line
+
+You can also use 
+git rebase branchname
+ to change the base of the current branch to be branchname
+
+The git rebase command is a lot more powerful.  Check out 
+this link
+ for more information.
+
+https://help.github.com/en/articles/about-pull-request-merges
+
+CODE REVIEWS:
+http://google.github.io/styleguide/
+
+https://help.github.com/en/articles/about-pull-request-reviews
+
+https://medium.com/osedea/the-perfect-code-review-process-845e6ba5c31
+
+https://smartbear.com/learn/code-review/what-is-code-review/
