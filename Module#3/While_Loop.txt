@@ -1,0 +1,91 @@
+WHILE LOOP:
+===========
+Syntax:
+<	
+	initialization
+	while condition:
+		body
+		increment/decrement
+		                     >
+--------------------------------		
+
+Anatomy of a While Loop:
+------------------------
+A while loop will continuously execute code depending on the value of a condition. It begins with the keyword while, followed by a comparison to be evaluated, then a colon. On the next line is the code block to be executed, indented to the right. Similar to an if statement, the code in the body will only be executed if the comparison is evaluated to be true. What sets a while loop apart, however, is that this code block will keep executing as long as the evaluation statement is true. Once the statement is no longer true, the loop exits and the next line of code will be executed.  
+
+Common Pitfalls With Variable Initialization:
+-------------------------------------------------
+You'll want to watch out for a common mistake: forgetting to initialize variables. If you try to use a variable without first initializing it, you'll run into a NameError. This is the Python interpreter catching the mistake and telling you that you’re using an undefined variable. The fix is pretty simple: initialize the variable by assigning the variable a value before you use it.
+
+Another common mistake to watch out for that can be a little trickier to spot is forgetting to initialize variables with the correct value. If you use a variable earlier in your code and then reuse it later in a loop without first setting the value to something you want, your code may wind up doing something you didn't expect. Don't forget to initialize your variables before using them!
+
+Infinite loops and Code Blocks:
+-----------------------------------
+Another easy mistake that can happen when using loops is introducing an infinite loop. An infinite loop means the code block in the loop will continue to execute and never stop. This can happen when the condition being evaluated in a while loop doesn't change. Pay close attention to your variables and what possible values they can take. Think about unexpected values, like zero.
+
+In the Coursera code blocks, you may see an error message that reads "Evaluation took more than 5 seconds to complete." This means that the code encountered an infinite loop, and it timed out after 5 seconds. You should take a closer look at the code and variables to spot where the infinite loop is.
+
+Study Guide: while Loops:
+------------------------------
+This study guide provides a quick-reference summary of what you learned in this segment and serves as a guide for the upcoming practice quiz.  
+In the while Loops segment, you learned about the logical structure and syntax of while loops. You also learned about the importance of initializing variables and how to resolve infinite while loops with the break keyword.  
+
+while Loops:
+--------------
+A while loop executes the body of the loop while a specified condition remains True. They are commonly used when there’s an unknown number of operations to be performed, and a condition needs to be checked at each iteration.
+
+Syntax:
+
+12
+while specified condition is True:
+    body of loop
+Example while loop:
+
+1234567891011121314151617181920212223242526272829
+multiplier = 1
+result = multiplier*5
+while result <= 50:
+  print(result)
+  multiplier += 1
+  result = multiplier*5
+print("Done")
+
+# This while loop prints the multiples of 5 between 1 and 50. The
+# "multiplier" variable is initialized with the starting value of 1. 
+
+  
+
+Common Errors in while Loops:
+-----------------------------------
+If you get an error message on a loop or it appears to hang, your debugging checklist should include the following checks:
+
+Failure to initialize variables. Make sure all the variables used in the loop’s condition are initialized before the loop.
+
+Unintended infinite loops. Make sure that the body of the loop modifies the variables used in the condition, so that the loop will eventually end for all possible values of the variables. You can often prevent an infinite loop by using the break keyword or by adding end criteria to the condition part of the while loop.
+
+while Loop Terms:
+---------------------
+while loop - Tells the computer to execute a set of instructions while a specified condition is True. In other words, while loops keep executing the same group of instructions until the condition becomes False.
+
+infinite loop - Missing a method for exiting the loop, causing the loop to run forever.
+break - A keyword that can be used to end a loop at a specific point. 
+
+Math Concepts on the Practice Quiz:
+-----------------------------------------
+The coding problems on the upcoming practice quiz will involve a few math concepts. Don’t worry if you are rusty on math. You will have plenty of support with these concepts on the quiz. The following is a quick overview of the math terms you will encounter on the quiz:  
+
+prime numbers - Integers that have only two factors, which are the number itself multiplied by 1. The lowest prime number is 2.
+
+prime factors - Prime numbers that are factors of an integer. For example, the prime numbers 2 and 5 are the prime factors of the number 10 (2x5=10). The prime factors of an integer will not produce a remainder when used to divide that integer. 
+
+divisor - A number (denominator) that is used to divide another number (numerator). For example, if the number 10 is divided by 5, the number 5 is the divisor.
+
+sum of all divisors of a number - The result of adding all of the divisors of a number together.  
+
+multiplication table - An integer multiplied by a series of numbers and their results formatted as a table or a list. For example:
+
+                 4x1=4
+                 4x2=8
+                 4x3=12
+                 4x4=16
+                 4x5=20
